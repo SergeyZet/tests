@@ -132,8 +132,7 @@ btn.addEventListener('click', function() {
 			}
 			rotateContent.classList.add('hidden');
 			abcHint.classList.remove('hidden');
-			btn.disabled = false;
-			//btnOverlay.classList.remove('hidden');
+			btnOverlay.classList.remove('hidden');
 			styleNextTimer(b);
 			stopTimer(b);
 			break;
@@ -239,7 +238,7 @@ abcHintOk.addEventListener('click', function() {
 /*----------------------btnResult---------------------------------------------*/
 btnResult.addEventListener('click', function() {
 	if (a==3) {
-		location.replace('test_code/ball.html');
+		location.replace('ball.html');
 	} else {
 		testResult.classList.add('hidden');
 		startScreen.classList.remove('hidden');

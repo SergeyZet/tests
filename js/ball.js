@@ -56,7 +56,7 @@ btnStart.onclick = function() {
 		train.style.top = Ypos + 'px';
 
         if (timePassed > 20000) {clearInterval(timer); //вырубить таймер
-        	location.replace('test_code/waterlemon.html');
+        	location.replace('waterlemon.html');
         }
       }, 20);
       firstTime = 1;

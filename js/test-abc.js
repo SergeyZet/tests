@@ -132,8 +132,7 @@ btn.addEventListener('click', function() {
 			}
 			rotateContent.classList.add('hidden');
 			abcHint.classList.remove('hidden');
-			btn.disabled = false;
-			//btnOverlay.classList.remove('hidden');
+			btnOverlay.classList.remove('hidden');
 			styleNextTimer(b);
 			stopTimer(b);
 			break;

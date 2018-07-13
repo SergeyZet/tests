@@ -27,7 +27,7 @@ var qa = [
 },
 {
 	task: ['Кон','Кол'],
-	answ: ['Рот','Шок','Кол','Лот','Лет','Рок'],
+	answ: ['Кон','Шок','Кол','Лот','Лет','Рок'],
 },
 ];
 var taskTest2 = document.querySelector('.task-test2');
@@ -183,4 +183,23 @@ function result(errors) {
 	var answers = 10;
 	res = 100-(errors/answers)*100;
 }
-
+var btnStart = document.querySelector('#start-btn');
+var btnAnsw = document.querySelector('#btn-answ');
+var btnReady = document.querySelector('#btn-ready');
+var start = document.querySelector('.test-wraper-start');
+var ready = document.querySelector('.test-wraper-ready');
+var task = document.querySelector('.test-wraper2');
+var answ = document.querySelector('.test2-answer');
+window.addEventListener('keypress', function(e) {
+	if (e.charCode==32|| e.keyCode == 32 || e.which == 32) {
+		e.preventDefault ? e.preventDefault() : e.returnValue = false;
+		if (start.classList.contains('hidden')==false) {
+			btnStart.click();
+		} else if (ready.classList.contains('hidden')==false) {
+			btnReady.click();
+		}else if (btnAnsw.classList.contains('hidden')==false)
+		{ 
+		btnAnsw.click();
+	}
+}
+});

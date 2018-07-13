@@ -22,6 +22,17 @@ function startTime()
 }
 
 var firstTime = 0;
+var ballScreen = document.querySelector('.ball-screen');
+window.addEventListener('keypress', function(e) {
+	if (e.charCode==32|| e.keyCode == 32 || e.which == 32) {
+		e.preventDefault ? e.preventDefault() : e.returnValue = false;
+		if (ballScreen.classList.contains('hidden')) {
+			console.log('btnStart');
+			btnStart.click();
+		} 
+}
+});
+
 btnStart.onclick = function() {
 	test.classList.add('hidden');
 	header.classList.add('hidden');

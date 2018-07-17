@@ -913,6 +913,7 @@ p {
 .possible-answer__wrap {
   display: inline-block;
   margin-top: 30px;
+  outline: none;
 }
 .possible-answer__item {
   display: inline-block;
@@ -923,7 +924,6 @@ p {
   font-family: "MuseoSans-900", "Arial", sans-serif;
   text-decoration: none;
   cursor: pointer;
-  outline: none;
   border: none;
   border-radius: 35px;
   vertical-align: top;
@@ -931,6 +931,7 @@ p {
   font-size: 24px;
   color: #ffffff;
   background-color: #9d2aff;
+  outline: none;
 }
 .possible-answer__item:hover {
   -webkit-box-shadow: 2px 2px 5px grey;
